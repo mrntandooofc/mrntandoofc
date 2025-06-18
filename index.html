@@ -1,11 +1,15 @@
-html 
 <!DOCTYPE html> 
 <html lang="en"> 
 <head> 
 <meta charset="UTF-8"> 
 <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-<title>API Website</title> 
+<title>iamnyc Website</title> 
+<style> 
+body { 
+background-image: url('https://yoururl.com/api/background.png'); 
+} 
+</style> 
 </head> 
 <body onload="play()"> 
 <audio id="audio" src="https://yoururl.com/api/audio.mp3"></audio> 
@@ -14,37 +18,20 @@ function play() {
 document.getElementById('audio').play(); 
 } 
 </script> 
-<h1>API Endpoint: https://yoururl.com/api</h1> 
-<p>API Endpoint Code:</p> 
-<pre> https://yoururl.com/api?endpoint= </pre> 
+<h1>iamnyc Endpoint: https://yoururl.com/iamnyc</h1> 
+<p>iamnyc Endpoint Code:</p> 
+<pre> https://yoururl.com/iamnyc?endpoint= </pre> 
 <p>Endpoints:</p> 
 <ul> 
-<li><a href="?endpoint=play">Play API</a></li> 
-<li><a href="?endpoint=video">Video API</a></li> 
-<li><a href="?endpoint=ytsrarch">YtSearch API</a></li> 
-<li><a href="?endpoint=spotifysearch">Spotify Search API</a></li> 
-<li><a href="?endpoint=spotifyplay">Spotify Play API</a></li> 
+<li><a href="?endpoint=play">Play iamnyc</a></li> 
+<li><a href="?endpoint=video">Video iamnyc</a></li> 
+<li><a href="?endpoint=ytsrarch">YtSearch iamnyc</a></li> 
+<li><a href="?endpoint=spotifysearch">Spotify Search iamnyc</a></li> 
+<li><a href="?endpoint=spotifyplay">Spotify Play iamnyc</a></li> 
 </ul> 
 <script> 
 let url = new URL(window.location.href); 
 let endpoint = url.searchParams.get("endpoint"); 
 if(endpoint == "play"){ 
 let url2 = prompt("Enter URL") 
-window.open(url2) 
-} else if(endpoint == "video"){ 
-let url2 = prompt("Enter URL") 
-window.open(url2) 
-} else if(endpoint == "ytsrarch"){ 
-let search = prompt("Enter Search") 
-window.open(`https://www.youtube.com/results?search_query=${search}`) 
-} else if(endpoint == "spotifysearch"){ 
-let search = prompt("Enter Search") 
-window.open(`https://open.spotify.com/search/${search}`) 
-} else if(endpoint == "spotifyplay"){ 
-let search = prompt("Enter Song") 
-window.open(`https://open.spotify.com/search/${search}`) 
-window.open(`https://open.spotify.com/track/${search}`) 
-} 
-</script> 
-</body> 
-</html> 
+window.
